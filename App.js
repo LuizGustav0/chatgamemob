@@ -86,10 +86,14 @@ export default class App extends React.Component {
                      tabBarOptions = {{
                      activeTintColor: '#5a5a5a',
                      inactiveTintColor: '#5a5a5a',
+                     style: {
+                        paddingBottom: 5,
+                        paddingtop: 5,
+                      },
                     }}>
                 
                 <sampleTabNavigation.Screen name="Code" component={Code}/>
-                <sampleTabNavigation.Screen name="Chat"  component={Chat} options={{ tabBarBadge: 1 }}/>
+                <sampleTabNavigation.Screen name="Chat" component={Chat} options={{ tabBarBadge: " " }}/>
                 <sampleTabNavigation.Screen name="Apps" component={Apps} />
                 <sampleTabNavigation.Screen name="Ligar" component={Discnumber}/>
                 <sampleTabNavigation.Screen name="Shop" component={Shop} /> 

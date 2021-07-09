@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Bot from 'react-native-chatbot';
+import { StyleSheet, Text, SafeAreaView, StatusBar , View, Button} from 'react-native';
 
 //Instruções que o chatbot irá seguir:
 const steps = [
@@ -58,6 +59,7 @@ const steps = [
 export default class ChatBot extends Component {
   render() {
     return (
+      <SafeAreaView>
       <Bot 
         steps={steps} 
         // Avatar do Bot e do usuário //
@@ -78,6 +80,7 @@ export default class ChatBot extends Component {
         footerStyle={{ backgroundColor: '#fff', margin: 5, padding: 1, borderRadius: 7, elevation: 2, }}
         submitButtonStyle={{ backgroundColor: '#E89984', borderRadius: 4, width: 63, margin: 2 }}
       />
+      </SafeAreaView>
     );
   }
 }
